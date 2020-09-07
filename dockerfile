@@ -1,5 +1,5 @@
 # Dockerfile
-FROM busybox
+FROM ubuntu
 
 RUN echo "building simple docker image"
 
