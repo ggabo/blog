@@ -1,8 +1,6 @@
 # Dockerfile
-FROM php:5.5-apache
+FROM busybox
 
-RUN docker-php-ext-install pdo_mysql
-RUN a2enmod rewrite
+RUN echo "building simple docker image"
 
-ADD . /var/www
-ADD ./public /var/www/html
+CMD echo "Hello Container"
