@@ -1,6 +1,8 @@
 # Dockerfile
 FROM ubuntu
 
-RUN echo "building simple docker image"
+RUN apt-get -y update
 
-CMD echo "Hello Container"
+RUN apt-get install nano
+
+CMD ["/bin/nano", "/tmp/notes"]
